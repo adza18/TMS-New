@@ -1,0 +1,37 @@
+@use '../base/variables';
+@use '../base/modifiers';
+.button-search{
+    background-color: variables.$bgcolorSecondary;
+    padding: 0.8rem;
+}
+.button-filled{
+    background-color:variables.$colorPrimary;
+    color: whitesmoke;
+    padding: 0.5rem;
+}
+.button-transparent{
+    background-color: transparent;
+    border:1px solid variables.$colorPrimary;
+    @extend .color--primary;
+    padding: 0.2rem;
+}
+.button-pagination{
+    margin-right: 1rem;
+    &:hover{
+        color: variables.$bgColorPrimary;
+        background-color:variables.$colorPrimary;
+    }
+}
+
+.button-sort{
+      color: variables.$colorBW-shade1;
+      &.active {
+            color: variables.$colorBW-shade3;
+    
+        }
+        &:hover{
+          color: variables.$colorBW-shade3;
+      
+      }
+    
+}

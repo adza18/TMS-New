@@ -1,0 +1,10 @@
+.search-wrapper{
+        border: 1px solid transparent;
+        &:active {
+          border: 1px solid blue;
+        }
+        &:hover {
+          border: 1px solid blue;
+        }
+}
+

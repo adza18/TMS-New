@@ -1,0 +1,43 @@
+/* You can add global styles to this file, and also import other style files */
+@use 'base';
+@use 'components';
+@use 'layout';
+
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@media screen and (max-width: 992px) {
+    html {
+        font-size: 62.5% !important;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    html {
+        font-size: 62.5% !important;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    html {
+        font-size: 65% !important;
+    }
+}
+
+@media screen and (max-width: 1800px) {
+    html {
+        font-size: 67.5% !important;
+    }
+}
+
+@media screen and (max-width: 1800px) {
+    html {
+        font-size: 70% !important;
+    }
+}

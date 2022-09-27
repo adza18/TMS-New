@@ -1,0 +1,112 @@
+@use 'variables';
+@use '../layout/container';
+@use 'utility';
+
+
+.bg--primary{
+    background-color: variables.$bgcolorSecondary;
+}
+.bg--white{
+    background-color: white;
+}
+
+.color--red{
+    color: variables.$colorError;
+
+}
+
+.color--gray{
+    color: variables.$colorBW-shade2;
+}
+
+.color--primary{
+    color: variables.$colorPrimary;
+}
+.row-container--solid{
+    @extend .row-container;
+    border-style: solid;
+}
+
+.row-container--dashed{
+    @extend .row-container;
+    border-style: dashed;
+}
+
+.circle--white{
+    @extend .circle;
+    background-color: variables.$bgColorPrimary;
+    border: 1px solid  variables.$colorBW-shade4;
+}
+
+.circle--open{
+    @extend .circle;
+    background-color: variables.$colorOpen;
+}
+.circle--progress{
+    @extend .circle;
+    background-color: variables.$colorProgress;
+
+}
+.circle--closed{
+    @extend .circle;
+    background-color: variables.$colorClosed;
+    
+}
+
+.circle--review{
+    @extend .circle;
+    background-color: variables.$colorReview;
+}
+
+.ticket{
+    padding: 0.5rem;
+    border-radius: 1.2rem;
+}
+
+
+.ticket--completed{
+    @extend .ticket;
+    background-color:variables.$colorCompleted;
+    color:variables.$colorSuccess;
+}
+
+.ticket--assigned{
+    @extend .ticket;
+    background-color:variables.$colorAssigned;
+}
+
+
+.ticket--pending{
+    @extend .ticket;
+    background-color:variables.$colorPending;
+    color:variables.$colorPending1;
+
+}
+
+.ticket--new{
+    @extend .ticket;
+    background-color:variables.$colorNew;
+    color:variables.$colorPrimary;
+}
+
+@each $key, $value in variables.$buttonWidth
+{
+    .btn-width--#{$key}
+    {
+        width: $value;
+    }
+
+    @if $key == 'medium'{
+        .btn-width--#{$key}
+        {
+            border-radius: 0.5rem;
+            margin-left: 1rem;
+        }
+    }
+}
+
+
+
+
+
+

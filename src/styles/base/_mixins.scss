@@ -1,0 +1,22 @@
+@mixin positioning ($avalue,$jvalue)
+{
+    display: flex;
+    align-items: $avalue;
+    justify-content: $jvalue;
+
+}
+
+@mixin roundedImage($radius,$height,$width)
+{
+    border-radius: $radius;
+    height: $height;
+    width: $width;
+    object-fit: cover;
+// }
+}
+
+@mixin backGround($color)
+{
+    background-color: $color;
+}
+

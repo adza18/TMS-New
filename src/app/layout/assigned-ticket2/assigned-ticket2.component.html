@@ -1,0 +1,41 @@
+<div class="container-fluid">
+  <div class="row font-style--5 font-weight--semi-light bg--white p-3">
+    <div class="col-md-5">
+      <span [ngClass]="['circle--' + 'white']" class="d-inline-block"></span>
+      <span class="ps-3">Ticket name</span>
+    </div>
+    <div class="col-md-3">Due date</div>
+    <div class="col-md-3">Priority</div>
+    <div class="col-md-1">Assignee</div>
+  </div>
+
+  <div *ngFor="let ticket of name">
+    <div
+      *ngFor="let t of getTickets(ticket)"
+      class="row row-container--solid font-style--5 font-weight--semi-light bg--white"
+    >
+      <div class="col-4 col-md-5">
+        <span [ngClass]="['circle--' + ticket]" class="d-inline-block"></span>
+        <span class="ps-3">{{ t.issue }}</span>
+      </div>
+      <div class="col-4 col-md-3">
+        <i class="bi bi-calendar2-week pe-1"></i>
+        <span>{{ t.dueDate }}</span>
+      </div>
+      <div
+        class="col-4 col-md-3"
+        [ngClass]="t.priority == 'high' ? 'color--red' : 'color--primary'"
+      >
+        <span>{{ t.priority }}</span>
+      </div>
+      <div class="col-4 col-md-1">
+        <ng-container *ngFor="let i of image">
+          <img class="rounded-image" [src]="i.url" />
+        </ng-container>
+      </div>
+    </div>
+  </div>
+  <div class="row row-container--dashed rowText bg--white">
+    <app-add-input></app-add-input>
+  </div>
+</div>

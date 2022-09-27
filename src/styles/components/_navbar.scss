@@ -1,0 +1,10 @@
+.main-container{
+    display: flex;
+    .side-nav{
+        display: block;
+        height: 100%;
+        overflow-y: scroll;
+        background-color: red;
+    }
+  }
+  

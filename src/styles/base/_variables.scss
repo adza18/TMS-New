@@ -1,0 +1,94 @@
+$colorPrimary: #126C9C;
+$colorSecondary: #b9b9b9;
+
+$bgColorPrimary: #FFFFFF;
+$bgcolorSecondary: #FBFDFF;
+
+$colorError: #C91717;
+$colorSuccess: #309414;
+$colorWarning: #feaf13;
+
+$colorOpen:#D3D3D3;
+$colorProgress:#4194F6;
+$colorReview:#A875FF;
+$colorClosed:#6BC950;
+
+$colorNew : #F0F9FF;
+$colorPending: #FFEDE3;
+$colorCompleted:#DBF6E1;
+$colorAssigned:#E3FBFF;
+$colorPending1:#D9743F;
+
+
+
+$colorBW-shade0: #FFFFFF;
+$colorBW-shade1: #8d8d8d;
+$colorBW-shade2: #6A6A6A;
+$colorBW-shade3: #23263b;
+$colorBW-shade4: #F0F1F2;
+
+
+
+$inputFormHeight: 5rem;
+$buttonHeight-primary: 3.2rem;
+$buttonHeight-secondary: 2.5rem;
+$buttonBorderRadius: 5px;
+
+$fontSize-heading1: 2.4rem;
+$fontSize-heading2: 1.8rem;
+$fontSize-text1: 1.6rem;
+$fontSize-text2: 1.4rem;
+$fontSize-text3: 1.2rem;
+$fontSize-text4: 1.1rem;
+$fontSize-text5: 1rem;
+
+$lineHeight-heading1: 2.9rem;
+$lineHeight-heading2: 2.1rem;
+$lineHeight-text1: 2rem;
+$lineHeight-text2: 1.7rem;
+$lineHeight-text3: 1.7rem;
+$lineHeight-text4: 1.5rem;
+$lineHeight-text5: 1.2rem;
+
+$fontWeight1: 800;
+$fontWeight2: 700;
+$fontWeight3: 600;
+$fontWeight4: 500;
+$fontWeight5: 400;
+
+$sideBarWidth: 20.9rem;
+$sideBarWidthCollapsed: 7.2rem;
+
+$buttonWidth : ("medium":8.6rem,"large":11.3rem,"small":5.8rem);
+
+$fontSizes: (
+
+    1:(fontSize: $fontSize-heading1, lineHeight: $lineHeight-heading1 ),
+
+    2:(fontSize: $fontSize-heading2, lineHeight: $lineHeight-heading2,),
+
+    3:(fontSize: $fontSize-text1, lineHeight: $lineHeight-text1 ),
+
+    4:(fontSize:$fontSize-text2, lineHeight:$lineHeight-text2),
+
+    5:(fontSize: $fontSize-text3, lineHeight: $lineHeight-text3 ),
+
+    6:(fontSize: $fontSize-text4, lineHeight: $fontSize-text4)
+
+);
+
+$fontWeights: (
+
+    "light":(fontWeight:$fontWeight5),
+
+    "semi-light":(fontWeight:$fontWeight4),
+
+    "bold":(fontWeight:$fontWeight3),
+
+    "semi-bold":(fontWeight:$fontWeight2),
+
+    "max-bold":(fontWeight:$fontWeight1)
+
+);
+
+

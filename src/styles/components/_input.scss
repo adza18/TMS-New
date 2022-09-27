@@ -1,0 +1,16 @@
+@use '../base/variables';
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+  }
+  
+input[type="search"] {
+    background-color: variables.$bgcolorSecondary;
+    font-size: variables.$fontSize-text2;
+    border: none;
+    // padding: 0.5rem;
+    padding: 0.7rem;
+    &:focus {
+      outline: none;
+    }
+  }

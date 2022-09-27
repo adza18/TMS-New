@@ -1,0 +1,9 @@
+<aside class="side-nav" [ngClass]="isCollapsed? 'sidenav-collapsed':''">
+    <div>Logo section</div>
+    <button type="button" (click)="toggleCollapsed()">logo</button>
+    <div>Dashboard</div>
+    <div *ngFor="let nav of sideNavContents">
+        <div>{{nav.header}}</div>
+        <!-- <div *ngFor="let nav of navGroup?.contentArray" [routerLink]="nav.route">{{nav.name}}</div> -->
+    </div>
+</aside>

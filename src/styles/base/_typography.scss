@@ -1,0 +1,15 @@
+@use 'variables';
+
+@each $key,$value in variables.$fontWeights {
+    .font-weight--#{$key} {
+        font-weight: map-get($value, fontWeight);
+    }
+}
+
+@each $key,$value in variables.$fontSizes {
+    .font-style--#{$key} {
+        font-size: map-get($value, fontSize);
+        line-height: map-get($value, lineHeight);
+    }
+
+}

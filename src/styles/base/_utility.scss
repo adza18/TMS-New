@@ -1,0 +1,31 @@
+@use "mixins";
+
+.image{
+    // @include mixins.roundedImage("4px","4.4rem","4rem");
+    @include mixins.roundedImage(14px,4.2rem,4.2rem);
+}
+
+.rounded-image{
+    @include mixins.roundedImage(50%,2.5rem,2.5rem);
+}
+
+.icon-border{
+    border:1px dashed #6A6A6A;
+    padding: 0.5rem;
+    display: inline-block;
+    margin-right: 1rem;
+    @include mixins.roundedImage(50%,3.2rem,3.2rem);
+}
+
+.icon-size{
+    font-size: 1.5rem;
+}
+
+.circle{
+    height: 1rem;
+    width: 1rem;
+    border-radius:50% ;
+}
+
+
+

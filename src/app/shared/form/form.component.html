@@ -1,0 +1,100 @@
+<div class="container-fluid container-lg" style="border:1px solid black">
+    <div class="d-flex justify-content-end">
+      <button class="button-reset mainText">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+    
+    <div class="font-style--2 font-weight--bold mb-3">Open ticket</div>
+    <div class="row">
+        <div class="col-6">
+            <span class="font-style--3 font-weight--light color--gray">TicketID:1020030</span>
+            <span class="font-style--5 color--primary">*auto-generated</span>
+        </div>
+        <div class="col-6 d-flex justify-content-end mainText">
+          <div>
+            <span class="col-2 me-3"><i class="bi bi-eye"></i></span>
+            <span class="col-2 icon-border"><i class="bi bi-people"></i></span>
+            <span class="col-2 icon-border"><i class="bi bi-calendar3"></i></span>
+            <span class="col-2 icon-border"><i class="bi bi-flag"></i></span>
+        </div>
+      </div>
+    </div>
+    
+    <form [formGroup]="ticketForm" class="mt-5">
+    <div class="input-container font-style--3">
+      <label class="mb-2" for="name">Name</label> <br />
+      <input
+        class="form-control"
+        type="text"
+        id="name"
+        formControlName="name"
+      />
+      <div
+        class="text-danger"
+        *ngIf="
+          getInput('name')?.invalid &&
+          (getInput('name')?.touched || getInput('name')?.dirty)
+        "
+      >
+        <div *ngIf="isValid('name', 'required')">Name is required</div>
+        <div *ngIf="isValid('name', 'minlength')">
+          Minimum length is 5
+        </div>
+      </div>
+    </div>
+
+    <div class="input-container font-style--3">
+      <label class="mb-2" for="project">Project</label> <br />
+      <select
+        class="form-select"
+        style="color: #bebebe"
+        aria-label="Project select"
+      >
+        <option selected>Select project</option>
+        <option value="1">Select A</option>
+        <option value="2">Select B</option>
+      </select>
+    </div>
+
+    <div class="input-container font-style--3">
+      <label class="mb-2" for="description">Description</label> <br />
+      <textarea
+        class="form-control"
+        placeholder="Message..."
+        formControlName="description"
+      ></textarea>
+      <div
+        class="text-danger"
+        *ngIf="
+          getInput('description')?.invalid &&
+          (getInput('description')?.touched ||
+            getInput('description')?.dirty)
+        "
+      >
+        <div *ngIf="isValid('description', 'required')">
+          Description is required
+        </div>
+        <div *ngIf="isValid('description', 'minlength')">
+          Minimum length is 5
+        </div>
+      </div>
+    </div>
+    </form>
+
+    <div class="row d-flex">
+        <div class="col-10 font-style--4 font-weight--bold">
+          Attachments
+        </div>
+        <div class="col-2 d-flex justify-content-end">
+          <button class="button-reset button-transparent btn-width--small font-style--6">+Add</button>
+        </div>
+        <div class="col-12 font-style--5 color--gray">
+          <span><i class="bi bi-paperclip"></i></span>Drag & Drop files to
+          attach or <a href="#">browse</a>
+        </div>
+    </div>
+    <div class="d-flex justify-content-end">
+        <button class="button-reset button-filled font-style--4 btn-width--large">Create Ticket</button>
+    </div>   
+</div>
