@@ -7,6 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeadingListComponent implements OnInit {
 
+  list = [
+    {number:100, name:'open'},
+    {number:30, name:'progress'},
+    {number:40, name:'review'},
+    {number:40, name:'closed'},
+]
+
+
   constructor() { }
 
   ngOnInit(): void {

@@ -2,7 +2,6 @@
 @use '../layout/container';
 @use 'utility';
 
-
 .bg--primary{
     background-color: variables.$bgcolorSecondary;
 }
@@ -12,7 +11,10 @@
 
 .color--red{
     color: variables.$colorError;
+}
 
+.color--white{
+    color: white;
 }
 
 .color--gray{

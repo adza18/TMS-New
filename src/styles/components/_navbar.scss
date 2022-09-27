@@ -1,10 +1,64 @@
-.main-container{
-    display: flex;
-    .side-nav{
-        display: block;
-        height: 100%;
-        overflow-y: scroll;
-        background-color: red;
+    @keyframes nav-collapse {
+        0%{
+            color: black;
+        }
+        100%{
+            color:white;
+            visibility: hidden;
+        }
     }
-  }
+
+    .side-nav{
+        width: 18rem;
+        position: relative;
+        overflow:hidden;
+        height: 100vh;
+        transition: 0.5s;
+        display: block;
+        border-right: 2px solid rgba(181, 179, 179, 0.95) ;
+        .nav-button{
+            position: absolute;
+            left: 16rem;
+            transition: 0.5s;
+        }
+    }
+    .active{
+        color:  #126C9C;
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            background-color:  #126C9C;
+            height: 2rem;
+            right: 0;
+            width: 0.4rem;
+        }
+    }
+
+
+    .sidenav-collapsed{
+        transition: 0.5s;
+        width: 8rem;
+        display: inline-block;
+        .show-on-collapse{
+            animation: nav-collapse 0.5s linear;
+            animation-fill-mode:forwards;
+            
+        }
+        .nav-button{
+            position: absolute;
+            left: 6rem;
+            transition: 0.5s;
+        }
+    }
+    .nav-content{
+        white-space: nowrap;
+        overflow: hidden;
+    
+    }
+
+   
+   
+
+    
   

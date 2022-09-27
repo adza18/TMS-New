@@ -6,7 +6,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./nav.component.scss']
 })
 export class NavComponent implements OnInit {
-  isCollapsed = true;
+  isCollapsed = false;
 
   sideNavContents = [
     {
@@ -14,18 +14,18 @@ export class NavComponent implements OnInit {
       contentArray: [
         {
           name: 'All Tickets',
-          route: 'layout/ticket',
-          logo: ''
+          route: 'layout/ticket/allticket',
+          logo: 'bi bi-ticket-perforated'
         },
         {
           name: 'Assigned Ticket',
-          route: '',
-          logo: ''
+          route:'layout/ticket/assignedticket',
+          logo: 'bi bi-ticket-detailed'
         },
         {
           name: 'WatchList',
-          route: '',
-          logo: ''
+          route: 'layout/ticket/watchList',
+          logo: 'bi bi-stopwatch'
         }
       ]
     },
@@ -34,18 +34,18 @@ export class NavComponent implements OnInit {
       contentArray: [
         {
           name: 'FAQ',
-          route: '',
-          logo: ''
+          route: 'layout/ticket/faq',
+          logo: 'bi bi-question-circle'
         },
         {
           name: 'About Us',
-          route: '',
-          logo: ''
+          route: 'layout/ticket/about-us',
+          logo: 'bi bi-info-circle'
         },
         {
           name: 'Logout',
-          route: '',
-          logo: ''
+          route: 'layout/ticket/logout',
+          logo: 'bi bi-box-arrow-right'
         }
       ]
     }
@@ -55,10 +55,7 @@ export class NavComponent implements OnInit {
     this.isCollapsed = !this.isCollapsed;
   }
 
-  closeSideNav(): void {
-    this.isCollapsed = false;
-  }
-
+ 
   constructor() { }
 
   ngOnInit(): void {

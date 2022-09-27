@@ -1,0 +1,25 @@
+.login-wrapper{
+    height: 100vh;
+}
+
+input{
+    width: 40rem;
+    height: 5rem;
+    border: 1px solid #BEBEBE;
+    border-radius: 1rem;
+}
+button{
+    width: 40rem;
+    height: 5rem;
+    border-radius:1rem ;
+}
+
+.background-img{
+    background-image: url("../../../../assets/images/Background_1.png");
+    // background-repeat: no-repeat;
+    border-radius: 3rem;
+}
+.welcome-text{
+    padding-top: 25rem;
+    padding-left: 10rem;
+}

@@ -13,6 +13,7 @@ import { AllTicketsTableComponent } from './layout/all-tickets-table/all-tickets
 import { AssignedTicket2Component } from './layout/assigned-ticket2/assigned-ticket2.component';
 import { HeadingListComponent } from './shared/heading-list/heading-list.component';
 import { NavComponent } from './core/components/nav/nav.component';
+import { LoginComponent } from './core/components/login/login.component';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { NavComponent } from './core/components/nav/nav.component';
     AssignedTicket2Component,
     HeadingListComponent,
     NavComponent,
+    LoginComponent,
  
   ],
   imports: [

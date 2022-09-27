@@ -1,0 +1,32 @@
+<div class="d-flex login-wrapper">
+  <div class="w-50 background-img" style="border: 1px solid red">
+    <div class="color--white font-weight--bold welcome-text" >
+            <span class="font-style--1">Welcome To </span>  <br>
+            <span class="font-style--2">Ticket Manangement System </span>
+            <p class="font-style--3">is simply dummy text of the printing and typesetting industry. Lore</p>
+    </div>
+  </div>
+
+  <div class="w-50 d-flex" style="border: 1px solid green">
+    <div class="mt-5" style="border: 1px solid blue; margin: 0 auto">
+      <div class="font-style--2 font-weight--bold">
+        <span class="color--primary">Ticket </span> Management <br />
+        System
+      </div>
+
+      <p class="mt-5 font-style--1 color--primary font-weight--bold">Lets get started</p>
+      <p class="font-style--3">By continuing you agree to our <span class="color--primary">User Agreement <br></span>and <span class="color--primary">Privacy policy.</span></p>
+      <form [formGroup]="loginForm" class="mt-5">
+        <div class="input-container font-style--3">
+          <label for="email">Mobile number or email</label> <br />
+          <input  type="text" id="email" formControlName="email" />
+        </div>
+        <div class="input-container font-style--3">
+          <label for="email">Email</label> <br />
+          <input type="text" id="email" formControlName="email" />
+        </div>
+      </form>
+      <button class="button-reset button-filled font-style--2">Login</button>
+    </div>
+  </div>
+</div>
