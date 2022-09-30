@@ -2,3 +2,10 @@ input,select,textarea{
     font-size: 1.6rem;
     border-radius:1rem ;
 }
+
+input:focus{
+    &~.text-danger{
+       opacity: 0;
+       transition: 0.3s;
+    }
+}

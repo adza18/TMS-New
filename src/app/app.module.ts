@@ -14,7 +14,11 @@ import { AssignedTicket2Component } from './layout/assigned-ticket2/assigned-tic
 import { HeadingListComponent } from './shared/heading-list/heading-list.component';
 import { NavComponent } from './core/components/nav/nav.component';
 import { LoginComponent } from './core/components/login/login.component';
-
+import { BreadcrumbComponent } from './shared/breadcrumb/breadcrumb.component';
+import { DashboardComponent } from './core/components/dashboard/dashboard.component';
+import { NgCircleProgressModule } from 'ng-circle-progress';
+import { ChartComponent } from './shared/chart/chart.component';
+import { ProgressBarComponent } from './shared/progress-bar/progress-bar.component';
 
 @NgModule({
   declarations: [
@@ -29,13 +33,26 @@ import { LoginComponent } from './core/components/login/login.component';
     HeadingListComponent,
     NavComponent,
     LoginComponent,
+    BreadcrumbComponent,
+    DashboardComponent,
+    ChartComponent,
+    ProgressBarComponent,
  
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgCircleProgressModule.forRoot({
+      radius:31,
+      outerStrokeColor:"#53a9ff",
+      outerStrokeWidth:5,
+      innerStrokeWidth:0,
+      animationDuration:300,
+      showSubtitle:false
+     
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,115 @@
+<div class="container bg--primary ps-5 pe-5 pt-4">
+    <div class="row">
+        <div class="col-md-12 font-style--1 font-weight--bold">Welcome,Adriza</div>
+        <div class="col-md-12 font-style--4 pt-3">is simply dummy text of the printing and typesetting.</div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-md-3 p-4">
+            <div class="row bg--white progress-width p-3">
+                <div class="col-md-6">
+                    <circle-progress
+                    [percent]="85"
+                    [radius]="31"
+                    [outerStrokeColor]="'#4EB4F9'"
+                    ></circle-progress>
+                </div>
+                <div class="col-md-6">
+                    <p class="font-style--2">Open</p>
+                    <p class="font-style--1 font-weight-bold color--blue">1001</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 p-4">
+            <div class="row bg--white progress-width p-3">
+                <div class="col-md-6">
+                    <circle-progress
+                    [percent]="85"
+                    [radius]="31"
+                    [outerStrokeColor]="'#126C9C'"
+                    ></circle-progress>
+                </div>
+                <div class="col-md-6">
+                    <p class="font-style--2">Open</p>
+                    <p class="font-style--1 font-weight-bold color--primary">1001</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 p-4">
+            <div class="row bg--white progress-width p-3">
+                <div class="col-md-6">
+                    <circle-progress
+                    [percent]="85"
+                    [radius]="31"
+                    [outerStrokeColor]="'#126C9C'"
+                    ></circle-progress>
+                </div>
+                <div class="col-md-6">
+                    <p class="font-style--2">Open</p>
+                    <p class="font-style--1 font-weight-bold color--primary">1001</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 p-4">
+            <div class="row bg--white progress-width p-3">
+                <div class="col-md-6">
+                    <circle-progress
+                    [percent]="85"
+                    [radius]="31"
+                    [outerStrokeColor]="'#4EB4F9'"
+                    ></circle-progress>
+                </div>
+                <div class="col-md-6">
+                    <p class="font-style--2">Open</p>
+                    <p class="font-style--1 font-weight-bold color--blue">1001</p>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+  
+
+    <div class="row mt-5">
+        <div class="col-md-8 ">
+            <div class="bg--white p-3">
+                <div class="row">
+                <div class="col-md-4 font-style--2 font-weight--bold">Ticket Fixed Chart</div>
+                <div class="col-md-4 offset-md-4">
+                    <div class="row font-style--4">
+                        <div class="col">Today</div>
+                        <div class="col">Week</div>
+                        <div class="col">Month</div>
+                        <div class="col">Year</div>
+                    </div>
+                </div>
+                </div>
+                <div class="row pt-5">
+                <app-chart></app-chart>
+                </div>
+             </div>
+        </div>
+        <div class="col-md-4 " >
+            <div class="bg--white p-3">
+                <div class="font-style--2 font-weight--bold">Total ticket due</div>
+                <div class="row pt-4" *ngFor="let w of width">
+                    <p class="color--primary font-style--3">Ticket 003</p>
+                    <p class="font-style--5">is simply dummy text of the printing, typesetting and typesetting.</p>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="font-weight--bold text-right" style="text-align: end;">{{w}}%</div>
+                            <app-progress-bar [widthProgress]="w"></app-progress-bar>
+                        </div>
+                        <div class="col-md-4 img-container">
+                            <ng-container *ngFor="let i of image">
+                                <img class="rounded-image" [src]="i.url" />
+                            </ng-container>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+  

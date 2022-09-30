@@ -11,7 +11,7 @@
         <div *ngFor="let n of nav?.contentArray">
             <div class = "nav-content font-style--4 font-weight--light pt-3 ps-4" 
             [routerLink]="n.route"
-            routerLinkActive="active"
+            routerLinkActive="active_bar "
             
             [ngClass]="n.name == 'Logout'?'color--red':''">
                 <span><i class="{{n.logo}}"></i></span>
